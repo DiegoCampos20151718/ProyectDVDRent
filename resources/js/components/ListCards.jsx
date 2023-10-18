@@ -11,7 +11,7 @@ function ListCards() {
     const [userData, serUserData] = useState({})
     useEffect(() => {
         const getUsers = async () => {
-            await axios.get('http://localhost/ProyDVDRent/public/api/user_index')
+            await axios.get('http://localhost/ProyectTWeb/ProyectDVDRent/public/api/user_index')
                 .then(function (response) {
                     // handle success
                     console.log(response);

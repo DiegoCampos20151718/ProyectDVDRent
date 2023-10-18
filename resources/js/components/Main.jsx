@@ -7,7 +7,7 @@ import {Routes, Route, Navigate} from "react-router-dom";
 function Main(){
     return(
         <Routes>
-            <Route path="/ProyDVDRent/public/" element={<Menu/>}>
+            <Route path="/ProyectTWeb/ProyectDVDRent/public/" element={<Menu/>}>
                 <Route path="card" element={<Card_C/>}/>
                 <Route path="Listcards" element={<ListCards/>}/>
                 <Route path="*" element={<Navigate replace to="/"/>}/>
