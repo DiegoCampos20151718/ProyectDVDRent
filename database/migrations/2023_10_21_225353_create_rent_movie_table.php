@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('rent_movie', function (Blueprint $table) {
             $table->id();
+            $table->date('date_of_rent');
+            $table->date('date_of_delivery');
+            $table->string('state_of_rent', 30);
+            $table->double('total_price', 15,  8);
             $table->timestamps();
         });
     }
