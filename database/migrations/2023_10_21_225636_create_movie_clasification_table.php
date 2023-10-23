@@ -15,7 +15,8 @@ return new class extends Migration
     {
         Schema::create('movie_clasification', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('name_of_clasification', 25);
+            $table->double('price_of_clasification', 15,  8);
         });
     }
 
