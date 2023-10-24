@@ -20,8 +20,6 @@ return new class extends Migration
             $table->integer('phone_number');
             $table->string('address', 100);
             $table->string('workstation', 25);
-            $table->string('email')->unique();
-            $table->string('password');
             $table->timestamps();
         });
     }
