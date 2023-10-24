@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Movie_Clasification extends Model
 {
     use HasFactory;
+    protected $fillable =['name_of_clasification',
+    'price_of_clasification'];
 }

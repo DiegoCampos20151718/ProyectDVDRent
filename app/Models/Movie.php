@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Movie extends Model
 {
     use HasFactory;
+    protected $fillable =['no_copies',
+    'title',
+    'actors',
+    'synopsis'];
+    /*
+    agregar referencias a otras tablas
+    */
+
 }

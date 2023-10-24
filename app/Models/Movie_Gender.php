@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Movie_Gender extends Model
 {
     use HasFactory;
+    protected $fillable =['name_gender'];
+    /*
+    referncia de uno a muchos
+    */
+
 }
