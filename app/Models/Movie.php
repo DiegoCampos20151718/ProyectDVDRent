@@ -12,8 +12,18 @@ class Movie extends Model
     'title',
     'actors',
     'synopsis'];
-    /*
-    agregar referencias a otras tablas
-    */
+    
+    public function movie_gender(): BelongsTo
+    {
+        return $this->BelongsTo(Movie_Gender::class);
+    }
+    public function movie_clasification(): BelongsTo
+    {
+        return $this->BelongsTo(Movie_Clasification::class);   
+    }
+    public function category(): BelongsTo
+    {
+        return $this->BelongsTo(Category::class);   
+    }
 
 }

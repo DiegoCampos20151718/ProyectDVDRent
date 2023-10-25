@@ -12,7 +12,18 @@ class Rent_Movie extends Model
     'date_of_delivery',
     'state_of_rent',
     'total_price'];
-    /*
-    agregar referencias a otras tablas
-    */
+    
+    public function employ(): BelongsTo
+    {
+        return $this->BelongsTo(Employ::class);
+    }
+    public function client(): BelongsTo
+    {
+        return $this->BelongsTo(Client::class);   
+    }
+    public function movie(): BelongsTo
+    {
+        return $this->BelongsTo(Movie::class);   
+    }
+
 }
