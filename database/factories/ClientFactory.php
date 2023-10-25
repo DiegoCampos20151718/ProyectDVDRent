@@ -19,9 +19,9 @@ class ClientFactory extends Factory
         return [
             "first_name" => fake()->firstName(),
             "last_name"  => fake()->lastName(),
-            "phone_number" => fake()->numerify('449#######'),
-            "address"=> fake()->paragraph($nbSentences = 3),
-            "date_of_admission" => fake()-> date()
+            "phone_number" => fake()->phoneNumber(),
+            "address"=> fake()->address(),
+            "date_of_admission" => fake()-> date('Y_m_d')
         ];
     }
 }

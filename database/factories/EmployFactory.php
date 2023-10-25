@@ -17,7 +17,11 @@ class EmployFactory extends Factory
     public function definition()
     {
         return [
-            //
+            "first_name" => fake()->firstName(),
+            "last_name"  => fake()->lastName(),
+            "phone_number" => fake()->phoneNumber(),
+            "address"=> fake()->address(),
+            "workstation" => fake()-> jobTitle()
         ];
     }
 }
