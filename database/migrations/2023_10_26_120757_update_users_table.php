@@ -31,7 +31,7 @@ return new class extends Migration
     {
         Schema::table('users', function(Blueprint $table){
             $table->dropForeign('users_employ_id_foreign');
-            $table->dropColum('employ_id');
+            $table->dropColumn('employ_id');
             });
 
     }

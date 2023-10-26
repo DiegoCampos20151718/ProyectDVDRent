@@ -40,11 +40,11 @@ return new class extends Migration
     {
         Schema::table('movie', function(Blueprint $table){
             $table->dropForeign('movie_gender_id_foreign');
-            $table->dropColum('gender_id');
+            $table->dropColumn('gender_id');
             $table->dropForeign('movie_clasification_id_foreign');
-            $table->dropColum('clasification_id');
+            $table->dropColumn('clasification_id');
             $table->dropForeign('movie_category_id_foreign');
-            $table->dropColum('category_id');
+            $table->dropColumn('category_id');
             });
     }
 };
