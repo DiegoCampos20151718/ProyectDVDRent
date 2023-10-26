@@ -13,10 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
+        Schema::table('users', function(Blueprint $table){
+
         $table->unsignedBigInteger('employ_id');
             $table-> foreign('employ_id')
             -> references('id')-> on('employ')
             ->onDelete('cascade');
+        });
     }
 
     /**
@@ -26,6 +29,10 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('users', function(Blueprint $table){
+            $table->dropForeign('users_employ_id_foreign');
+            $table->dropColum('employ_id');
+            });
+
     }
 };

@@ -41,10 +41,14 @@ return new class extends Migration
         Schema::table('rent_movie', function(Blueprint $table){
             $table->dropForeign('rent_movie_client_id_foreign');
             $table->dropColum('client_id');
+        });
+        Schema::table('rent_movie', function(Blueprint $table){
             $table->dropForeign('rent_movie_employ_id_foreign');
             $table->dropColum('employ_id');
+        });
+        Schema::table('rent_movie', function(Blueprint $table){  
             $table->dropForeign('rent_movie_movie_id_foreign');
-            $table->dropColum('movie_id');
-            });
+            $table->dropColum('movie_id'); 
+        });
     }
 };
