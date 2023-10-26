@@ -9,7 +9,7 @@ class ResponseController extends Controller
     public function sendResponse($result, $message){
 
         $response=[
-            'seccess'=> true,
+            'success'=> true,
             'message' =>$message
         ];
         return response()->json($response,200);
@@ -19,7 +19,7 @@ class ResponseController extends Controller
 
     public function sendError($error,$errorMessage=[],$code= 404){
         $response=[
-            'seccess'=> true,
+            'success'=> true,
             'message' =>$error
         ];
 
