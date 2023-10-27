@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('password');
             $table->integer('phone_number');
             $table->string('address', 100);
-            $table->string('Rol', 25);
+            $table->string('rol', 25);
             $table->rememberToken();
             $table->timestamps();
         });
