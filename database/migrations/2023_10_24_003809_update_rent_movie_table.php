@@ -19,9 +19,9 @@ return new class extends Migration
             -> references('id')-> on('client')
             ->onDelete('cascade');
 
-            $table->unsignedBigInteger('employ_id');
-            $table-> foreign('employ_id')
-            -> references('id')-> on('employ')
+            $table->unsignedBigInteger('user_id');
+            $table-> foreign('user_id')
+            -> references('id')-> on('users')
             ->onDelete('cascade');
 
             $table->unsignedBigInteger('movie_id');
