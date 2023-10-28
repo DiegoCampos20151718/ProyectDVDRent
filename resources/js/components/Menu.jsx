@@ -12,6 +12,7 @@ function Menu() {
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="">Home</Nav.Link>
                         <Nav.Link as={Link} to="card">card</Nav.Link>
+                        <Nav.Link as={Link} to="Login">login</Nav.Link>
                         <Nav.Link as={Link} to="Listcards">Listcards</Nav.Link>
                     </Nav>
                 </Container>
