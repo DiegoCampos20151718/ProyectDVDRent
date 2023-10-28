@@ -38,6 +38,7 @@ class RegisterController extends ResponseController
         $success['last_name'] = $user->last_name;
         $success['phone_number'] = $user->phone_number;
         $success['address'] = $user->address;
+        $success['email'] = $user->email;
         $success['rol'] = $user->rol;
         
         
