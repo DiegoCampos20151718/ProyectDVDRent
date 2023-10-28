@@ -24,10 +24,5 @@ Route::get('/', function () {
 */
 Route::view('/{path?}','welcome')->where('path','.*');
 Route::get('/user', [UserController::class, 'index']);
-Route::post('/student_store', [StudentController::class, 'store']);
-Route::post('/student_show', [StudentController::class, 'show']);
-Route::post('/student_destroy', [StudentController::class, 'destroy']);
-Route::post('/student_update', [StudentController::class, 'update']);
 Route::get('/token', [StudentController::class, 'token']);
 
-Route::post('/program_store', [ProgramController::class, 'store']);

@@ -11,7 +11,7 @@ function Menu() {
                     <Navbar.Brand href="#home">DVD PALACE</Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="">Home</Nav.Link>
-                        <Nav.Link as={Link} to="card">card</Nav.Link>
+                        <Nav.Link as={Link} to="RegisterE">register</Nav.Link>
                         <Nav.Link as={Link} to="Login">login</Nav.Link>
                         <Nav.Link as={Link} to="Listcards">Listcards</Nav.Link>
                     </Nav>
