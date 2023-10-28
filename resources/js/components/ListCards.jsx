@@ -35,7 +35,7 @@ function ListCards() {
 
     return (
         <>
-            {userData.map((user) =>(<Card_C name={user.name} email={user.email} id={user.id} />))}
+            {userData.map((user) =>(<Card_C name={user.first_name} email={user.email} id={user.id} />))}
         </>
     )
 }
