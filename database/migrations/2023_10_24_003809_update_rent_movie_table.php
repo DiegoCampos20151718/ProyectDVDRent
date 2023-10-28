@@ -38,13 +38,14 @@ return new class extends Migration
      */
     public function down()
     {
+        /*
         Schema::table('rent_movie', function(Blueprint $table){
             $table->dropForeign('rent_movie_client_id_foreign');
             $table->dropColumn('client_id');
-        });
+        });*/
         Schema::table('rent_movie', function(Blueprint $table){
-            $table->dropForeign('rent_movie_employ_id_foreign');
-            $table->dropColumn('employ_id');
+            $table->dropForeign('rent_movie_user_id_foreign');
+            $table->dropColumn('user_id');
         });
         Schema::table('rent_movie', function(Blueprint $table){  
             $table->dropForeign('rent_movie_movie_id_foreign');
