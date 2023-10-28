@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import { Button, Form } from 'react-bootstrap'
+import RegisterE from "./RegisterE";
 
 
 function Login() {
