@@ -10,6 +10,7 @@ class ResponseController extends Controller
 
         $response=[
             'success'=> true,
+            'data' => $result,
             'message' =>$message
         ];
         return response()->json($response,200);

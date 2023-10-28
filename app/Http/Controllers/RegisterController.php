@@ -16,10 +16,14 @@ class RegisterController extends ResponseController
     public function register(Request $request){
 
         $validator = Validator::make($request->all(),[
-            'name' => 'required',
+            'first_name' => 'required',
+            'last_name' => 'required',
             'email' => 'required|email',
             'password' => 'required',
-            'c_password' => 'required|same:password'
+            'c_password' => 'required|same:password',
+            'phone_number' => 'required',
+            'address' => 'required',
+            'rol' => 'required',
         ]);
 
         if($validator->fails()){
