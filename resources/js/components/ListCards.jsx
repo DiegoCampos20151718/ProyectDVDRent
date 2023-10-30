@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Example from "./Example";
 import Card_C from "./Card_C";
 import axios from 'axios';
 import ReactDOM from 'react-dom/client';
