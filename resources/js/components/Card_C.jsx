@@ -20,12 +20,3 @@ const id = props.id
     );
 }
 export default Card_C;
-if (document.getElementById('app')) {
-    const Index = ReactDOM.createRoot(document.getElementById("app"));
-
-    Index.render(
-        <React.StrictMode>
-            <Card_C/>
-        </React.StrictMode>
-    )
-}
