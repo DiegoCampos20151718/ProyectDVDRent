@@ -23,10 +23,11 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-
+/*
         $this->call(ProgramSeeder::Class);
         $this->call(StudentSeeder::Class);
         Program::factory(5)->create();
         Student::factory(5)->create();
+        */
     }
 }

@@ -59,7 +59,7 @@ function RegisterE() {
             type="text"
             name='first_name'
             placeholder="First name"
-            defaultValue="Mark"
+            defaultValue="Mark" value={formValue.first_name} onChange={onChange}
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
@@ -69,7 +69,7 @@ function RegisterE() {
             type="text"
             name='last_name'
             placeholder="Last name"
-            defaultValue="Otto"
+            defaultValue="Otto" value={formValue.last_name} onChange={onChange}
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
@@ -85,7 +85,7 @@ function RegisterE() {
           </Form.Group>
           <Form.Group as={Col} md="6" controlId="validationCustom04">    
           <Form.Label>C_Password</Form.Label>
-          <Form.Control type='password' placeholder='Password' name='c_password' value={formValue.password} onChange={onChange} />
+          <Form.Control type='password' placeholder='Password' name='c_password' value={formValue.c_password} onChange={onChange} />
         </Form.Group>
         <Form.Group as={Col} md="3" controlId="validationCustom05">
           <Form.Label>Phone Number</Form.Label>
@@ -93,7 +93,7 @@ function RegisterE() {
             type="text"
             name='phone_number'
             placeholder="Phone_number"
-            defaultValue="4492892012"
+            defaultValue="449289201" value={formValue.phone_number} onChange={onChange}
           />
         </Form.Group>
       </Row>
@@ -104,7 +104,7 @@ function RegisterE() {
             type="text"
             name='address'
             placeholder="Address"
-            defaultValue="Cerrada Níspero #102"
+            defaultValue="Cerrada Níspero #102" value={formValue.address} onChange={onChange}
           />
         </Form.Group>
         <Form.Group as={Col} md="6" controlId="validationCustom07">
@@ -113,7 +113,7 @@ function RegisterE() {
             type="text"
             name='rol'
             placeholder="Rol"
-            defaultValue="Employ, boss"
+            defaultValue="Employ, boss" value={formValue.rol} onChange={onChange}
           />
         </Form.Group>
       </Row>
