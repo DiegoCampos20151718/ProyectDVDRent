@@ -14,7 +14,9 @@ class MovieController extends Controller
      */
     public function index()
     {
-        //
+        $movie = DB::table('movie')->get();
+
+        return $movie;
     }
 
     /**
@@ -46,7 +48,7 @@ class MovieController extends Controller
      */
     public function show(Movie $movie)
     {
-        //
+        
     }
 
     /**

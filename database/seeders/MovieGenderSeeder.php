@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Movie_Gender;
 
 class MovieGenderSeeder extends Seeder
 {
@@ -14,6 +15,10 @@ class MovieGenderSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $MovieGender = new Movie_Gender();
+        $MovieGender-> name_gender ="Action";
+        $MovieGender->save();
+    $MovieGender = new Movie_Gender();
+        
     }
 }
