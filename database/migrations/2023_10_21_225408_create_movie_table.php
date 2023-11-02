@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->integer('no_copies');
             $table->string('title', 30);
+            $table->string('image', 100);
             $table->string('actors', 200);
             $table->string('synopsis', 500);
             $table->timestamps();
