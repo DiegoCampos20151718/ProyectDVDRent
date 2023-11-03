@@ -24,10 +24,7 @@ return new class extends Migration
             -> references('id')-> on('movie_clasification')
             ->onDelete('cascade');
 
-            $table->unsignedBigInteger('category_id');
-            $table-> foreign('category_id')
-            -> references('id')-> on('category')
-            ->onDelete('cascade');
+           
             });
     }
 
@@ -43,8 +40,6 @@ return new class extends Migration
             $table->dropColumn('gender_id');
             $table->dropForeign('movie_clasification_id_foreign');
             $table->dropColumn('clasification_id');
-            $table->dropForeign('movie_category_id_foreign');
-            $table->dropColumn('category_id');
             });
     }
 };

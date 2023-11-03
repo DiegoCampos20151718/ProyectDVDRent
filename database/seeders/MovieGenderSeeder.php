@@ -18,7 +18,7 @@ class MovieGenderSeeder extends Seeder
         $MovieGender = new Movie_Gender();
         $MovieGender-> name_gender ="Action";
         $MovieGender->save();
-    $MovieGender = new Movie_Gender();
+        $MovieGender = new Movie_Gender();
         
     }
 }
